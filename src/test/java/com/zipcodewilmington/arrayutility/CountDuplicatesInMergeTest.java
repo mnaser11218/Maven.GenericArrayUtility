@@ -34,7 +34,7 @@ public class CountDuplicatesInMergeTest {
         ArrayUtility<Long> arrayUtility = new ArrayUtility<Long>(inputArray);
 
         // When
-        Integer actual = arrayUtility.countDuplicatesInMerge(arrayToMerge, valueToEvaluate);
+        Integer actual = Math.toIntExact(arrayUtility.countDuplicatesInMerge(arrayToMerge, valueToEvaluate));
 
         // Then
         Assert.assertEquals(expected, actual);

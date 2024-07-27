@@ -32,7 +32,7 @@ public class GetNumberOfOccurrencesTest {
         ArrayUtility<Long> arrayUtility = new ArrayUtility<Long>(inputArray);
 
         // When
-        Integer actual = arrayUtility.getNumberOfOccurrences(valueToEvaluate);
+        Integer actual = Math.toIntExact(arrayUtility.getNumberOfOccurrences(valueToEvaluate));
 
         // Then
         Assert.assertEquals(expected, actual);
